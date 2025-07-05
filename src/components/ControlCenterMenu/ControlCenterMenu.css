@@ -1,0 +1,143 @@
+.control-center-menu-main{
+    position: fixed;
+    top: 2.3rem;
+    right: 0.3rem;
+    border : 1px solid rgba(190, 190, 190, 0.5);
+    border-radius: 1rem;
+    background-color: rgba(35, 35, 35, 0.63);
+    backdrop-filter: blur(100px);
+    width: 20rem;
+    color:'#C8C8C8';
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+}
+
+.control-center-row{
+    margin: 0.5rem;
+    margin-top: 0.5rem;
+    width: 19rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-center-column{
+    border : 0.2px solid rgba(190, 190, 190, 0.5);
+    border-radius: 1rem;
+    background-color: rgba(46, 46, 46, 0.6);
+    width: 9.2rem;
+    border-radius: 1rem;
+}
+
+.wifi-item{
+    display: flex;
+    height: 2.66rem;
+    align-items: center;
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.7rem;
+    margin-top: 0.5rem;
+    border-radius: 50%;
+    background-color: rgb(50,120,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    position: relative;
+    width: 20rem;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider > .custom-slider,
+.slider > input {
+    position: absolute;
+    width: 17rem;
+}
+
+.slider > .custom-slider {
+    pointer-events: none;
+    height: 1.4rem;
+}
+
+.slider > .custom-slider > * {
+    position: absolute;
+}
+
+.slider > .custom-slider > .fill {
+    top: 0;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    mix-blend-mode: plus-lighter;
+}
+
+.slider > .custom-slider > .track {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.slider > .custom-slider > .primary1 {
+    background-color: rgba(255, 255, 255, 1);
+    border: 0.2px solid rgba(190, 190, 190, 0.5);
+    width: 50%; /* Initial fill width */
+}
+
+.slider > .custom-slider > .primary2 {
+    background-color: rgba(255, 255, 255, 1);
+    border: 0.2px solid rgba(190, 190, 190, 0.5);
+    width: 50%; /* Initial fill width */
+}
+
+.slider > .custom-slider > .knob1 {
+    width: 1.4rem;
+    border: 0.8px solid rgba(50, 50, 50, 0.5);
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateX(-50%);
+    left: 50%; /* Initial knob position */
+}
+
+.slider > .custom-slider > .knob2 {
+    width: 1.4rem;
+    border: 0.8px solid rgba(50, 50, 50, 0.5);
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateX(-50%);
+    left: 50%; /* Initial knob position */
+}
+
+.slider > input {
+    border-radius: 1.4rem;
+    margin: 0;
+    height: 1.4rem;
+    border: 0.2px solid rgba(190, 190, 190, 0.5);
+    background-color: rgba(190, 190, 190, 0.5);
+    -webkit-appearance: none !important;
+}
+
+.slider > input::-webkit-slider-thumb {
+    width: 9px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    -webkit-appearance: none !important;
+    pointer-events: all;
+}
+
+/* iOS adjustments */
+.ios .slider > input {
+    pointer-events: none;
+    -webkit-user-select: none !important;
+    -webkit-touch-callout: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
